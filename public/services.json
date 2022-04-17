@@ -1,0 +1,20 @@
+[
+    {
+        "id":1,
+        "name":"Break Fast",
+        "price":"100",
+        "description":"This food is well and good.it is so testy and healthy.you can take it."
+    },
+    {
+        "id":2,
+        "name":"Lunch",
+        "price":"200",
+        "description":"This food is well and good.it is so testy and healthy.you can take it."
+    },
+    {
+        "id":3,
+        "name":"Dinner",
+        "price":"150",
+        "description":"This food is well and good.it is so testy and healthy.you can take it."
+    }
+]
