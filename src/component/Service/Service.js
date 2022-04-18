@@ -10,7 +10,7 @@ const Service = (props) => {
             <h4>{name}</h4>
             <p><small>Price:{price}</small></p>
             <p>{description}</p>
-            <Link to='/checkout'><button className='btn btn-warning'>Proceed Checkout</button></Link>
+            <Link to='/checkout'><button className='btn btn-warning w-100'>Proceed Checkout</button></Link>
         </div>
     );
 };
