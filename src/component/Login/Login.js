@@ -60,12 +60,12 @@ const Login = () => {
             <Form onSubmit={handleLoginSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
-                    <Form.Control ref={emailRef} name='email' type="email" placeholder="Enter email" />
+                    <Form.Control ref={emailRef} name='email' type="email" placeholder="Enter email" required/>
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label>Password</Form.Label>
-                    <Form.Control name='password' type="password" placeholder="Password" />
+                    <Form.Control name='password' type="password" placeholder="Password" required/>
                 </Form.Group>
                 <p>New to Junayed's food? <Link className='text-decoration-none' to='/register'>Please Register</Link></p>
                 <p>Forget password? <button onClick={handleResetPassword} className='btn btn-link text-decoration-none'>Please reset</button></p>
