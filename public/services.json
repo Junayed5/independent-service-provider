@@ -1,18 +1,21 @@
 [
     {
         "id":1,
+        "image":"https://www.collinsdictionary.com/images/full/breakfast_169364927.jpg",
         "name":"Break Fast",
         "price":"100",
         "description":"This food is well and good.it is so testy and healthy.you can take it."
     },
     {
         "id":2,
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT56_K8wERxM-R3kNwc50ubw8g1sjdGXxPcoXTTJyP7FMbuloqKf7MocG_9klcsRq0PrI&usqp=CAU",
         "name":"Lunch",
         "price":"200",
         "description":"This food is well and good.it is so testy and healthy.you can take it."
     },
     {
         "id":3,
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl_hhw1c5wOhLePqhVNQKawPrfm2Xh3JSaVYHQCF6iChpL9-7WbU9QUL0HIjSxUW0TcZs&usqp=CAU",
         "name":"Dinner",
         "price":"150",
         "description":"This food is well and good.it is so testy and healthy.you can take it."
