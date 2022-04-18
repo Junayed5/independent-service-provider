@@ -6,7 +6,7 @@ const Service = (props) => {
     const navigate = useNavigate()
 
     const handleNavigate = () => {
-        navigate(`checkout/${id}`);
+        navigate(`/checkout/${id}`);
     }
     return (
         <div className='border w-25 col m-3 p-2'>

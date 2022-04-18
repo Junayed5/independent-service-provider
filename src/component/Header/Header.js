@@ -13,7 +13,7 @@ const Header = () => {
     return (
             <Navbar sticky='top' bg="warning" expand="lg" variant="light">
                 <Container>
-                    <Navbar.Brand as={Link} to="/home" className='text-bolder'>Junayed's Food</Navbar.Brand>
+                    <Navbar.Brand as={Link} to="/home" ><span className='fw-bold'>Junayed's Food</span></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className='ms-auto'>
