@@ -9,7 +9,7 @@ const Service = (props) => {
         navigate(`/checkout/${id}`);
     }
     return (
-        <div className='border w-25 col m-3 p-2'>
+        <div className='border col-lg-3 col-12 m-3 p-2 '>
             <img className='w-100' src={image} alt="" />
             <h4>{name}</h4>
             <p><small>Price:{price}</small></p>

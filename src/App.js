@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Blogs from './component/Blogs/Blogs';
 import Checkout from './component/Checkout/Checkout';
 import Footer from './component/Footer/Footer';
 import Header from './component/Header/Header';
@@ -23,6 +24,7 @@ function App() {
             <Checkout></Checkout>
           </RequireAuth>
         }></Route>
+        <Route path='/blogs' element={<Blogs/>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>

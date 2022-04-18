@@ -19,6 +19,7 @@ const Header = () => {
                         <Nav className='ms-auto'>
                             <Nav.Link as={Link} to="/home">Home</Nav.Link>
                             <Nav.Link as={Link} to="/home#services">Services</Nav.Link>
+                            <Nav.Link as={Link} to="/blogs">Blogs</Nav.Link>
                             <Nav.Link as={Link} to="/">About me</Nav.Link>
                             {user?
                             <Button onClick={handleSignOut} variant="link" className='text-decoration-none text-dark'>Sign out</Button>

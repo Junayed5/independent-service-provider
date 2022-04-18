@@ -17,12 +17,18 @@ const Login = () => {
         loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
+    let errorHandle;
 
     if (user) {
         navigate(from, { replace: true });
     }
     if (loading) {
         return <Loading/>
+    }
+    if (error) {
+        errorHandle = <p className='text-danger'>{error?.message}</p>
+        navigate('/login');
+        // console.log(error?.message);
     }
 
     const handleLoginSubmit = event => {
@@ -48,6 +54,7 @@ const Login = () => {
                     <Form.Control name='password' type="password" placeholder="Password" />
                 </Form.Group>
                 <p>New to Junayed's food? <Link className='text-decoration-none' to='/register'>Please Register</Link></p>
+                {errorHandle}
                 <Button className='w-100 d-flex justify-content-center' variant="warning" type="submit">
                     Login
                 </Button>
