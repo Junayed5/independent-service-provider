@@ -8,6 +8,7 @@ import Home from './component/Home/Home';
 import Login from './component/Login/Login';
 import NotFound from './component/NotFound/NotFound';
 import Register from './component/Register/Register';
+import RequireAuth from './component/RequireAuth/RequireAuth';
 
 function App() {
   return (
@@ -17,7 +18,11 @@ function App() {
         {/* <Route path='/' element={<Banner></Banner>}></Route> */}
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
-        <Route path='/checkout/:checkoutId' element={ <Checkout></Checkout>}></Route>
+        <Route path='/checkout/:checkoutId' element={ 
+          <RequireAuth>
+            <Checkout></Checkout>
+          </RequireAuth>
+        }></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
